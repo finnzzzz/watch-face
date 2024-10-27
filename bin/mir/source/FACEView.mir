@@ -1,0 +1,151 @@
+[ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 6; ]
+class FACEView extends WatchUi.WatchFace{
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 7; @position = 6; ]
+    var font;
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 8; @position = 6; ]
+    var geist;
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 9; @position = 6; ]
+    var x;
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 10; @position = 6; ]
+    var y;
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 12; ]
+    function initialize() as Void {
+C_Users_Username_Desktop_FACE_source_FACEView_mc_12_24_12_50_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 12 26 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Username_Desktop_FACE_source_FACEView_mc_12_24_12_50_stop:
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 15; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_Username_Desktop_FACE_source_FACEView_mc_15_38_19_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 18 4 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_Username_Desktop_FACE_source_FACEView_mc_15_38_19_2_stop:
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 24; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 27; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 32 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_stop" ]
+        %clockTime.1 = local;
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 33 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_stop" ]
+        %timeHourString.2 = local;
+        %tmp.4 = getm $.Toybox.Lang;
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "$1$";
+        %tmp.7 = newa 1;
+        %tmp.8 = lgetv %clockTime.1;
+        %tmp.9 = getv %tmp.8 :hour;
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "%02d";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        %tmp.13 = dup %tmp.7;
+        %tmp.14 = aputv %tmp.13 0 %tmp.12;
+        %tmp.15 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.14);
+        lputv %timeHourString.2 %tmp.15;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 34 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_stop" ]
+        %timeMinString.3 = local;
+        %tmp.16 = getm $.Toybox.Lang;
+        %tmp.17 = getv function %tmp.16 :format;
+        %tmp.18 = "$1$";
+        %tmp.19 = newa 1;
+        %tmp.20 = lgetv %clockTime.1;
+        %tmp.21 = getv %tmp.20 :min;
+        %tmp.22 = getv function %tmp.21 :format;
+        %tmp.23 = "%02d";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = dup %tmp.19;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.27 = invoke %tmp.16 %tmp.17(%tmp.18, %tmp.26);
+        lputv %timeMinString.3 %tmp.27;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 43 4 ]
+        %tmp.29 = getv ? :View;
+        %tmp.30 = getv function %tmp.29 :onUpdate;
+        %tmp.32 = lgetv %dc;
+        invoke %tmp.29 %tmp.30(%tmp.32);
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 45 4 ]
+        %tmp.33 = self;
+        %tmp.34 = getv function %tmp.33 :drawReferenceLines;
+        %tmp.36 = lgetv %dc;
+        invoke %tmp.33 %tmp.34(%tmp.36);
+C_Users_Username_Desktop_FACE_source_FACEView_mc_27_38_46_2_stop:
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 49; ]
+    private
+    function drawReferenceLines(dc as Dc) as Void {
+C_Users_Username_Desktop_FACE_source_FACEView_mc_49_48_77_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 50 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_49_48_77_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_49_48_77_2_stop" ]
+        %WIDTH.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %WIDTH.1 %tmp.3;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 51 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_49_48_77_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_49_48_77_2_stop" ]
+        %HEIGHT.2 = local;
+        %tmp.4 = lgetv %dc;
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %HEIGHT.2 %tmp.6;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 53 4 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :setPenWidth;
+        %tmp.9 = 1;
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 62 4 ]
+        %tmp.10 = lgetv %dc;
+        %tmp.11 = getv function %tmp.10 :setColor;
+        %tmp.12 = getm $.Toybox.Graphics;
+        %tmp.13 = getv %tmp.12 :COLOR_LT_GRAY;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_TRANSPARENT;
+        invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15);
+C_Users_Username_Desktop_FACE_source_FACEView_mc_49_48_77_2_stop:
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 82; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 86; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 89; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 1; ]
+<init> {
+}

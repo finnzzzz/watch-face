@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\Username\Desktop\FACE\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="2" lineNum="6" parent="globals/FACEView" pc="268435481" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="4" lineNum="5" parent="globals/FACEApp" pc="268435513" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="7" lineNum="49" parent="globals/FACEView" pc="268435525" symbol="&lt;globals/FACEView/&lt;&gt;drawReferenceLines&gt;"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="7" lineNum="50" parent="globals/FACEView" pc="268435528" symbol="&lt;globals/FACEView/&lt;&gt;drawReferenceLines&gt;"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="7" lineNum="51" parent="globals/FACEView" pc="268435537" symbol="&lt;globals/FACEView/&lt;&gt;drawReferenceLines&gt;"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="7" lineNum="53" parent="globals/FACEView" pc="268435546" symbol="&lt;globals/FACEView/&lt;&gt;drawReferenceLines&gt;"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="7" lineNum="62" parent="globals/FACEView" pc="268435558" symbol="&lt;globals/FACEView/&lt;&gt;drawReferenceLines&gt;"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="8" lineNum="15" parent="globals/FACEView" pc="268435576" symbol="onLayout"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="8" lineNum="18" parent="globals/FACEView" pc="268435578" symbol="onLayout"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="10" lineNum="12" parent="globals/FACEView" pc="268435612" symbol="initialize"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="10" lineNum="12" parent="globals/FACEView" pc="268435614" symbol="initialize"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="12" lineNum="27" parent="globals/FACEView" pc="268435627" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="12" lineNum="32" parent="globals/FACEView" pc="268435630" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="12" lineNum="33" parent="globals/FACEView" pc="268435642" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="12" lineNum="34" parent="globals/FACEView" pc="268435687" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="12" lineNum="43" parent="globals/FACEView" pc="268435732" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEView.mc" id="12" lineNum="45" parent="globals/FACEView" pc="268435752" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="13" lineNum="12" parent="globals/FACEApp" pc="268435764" symbol="onStart"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="14" lineNum="20" parent="globals/FACEApp" pc="268435767" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="14" lineNum="21" parent="globals/FACEApp" pc="268435769" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="15" lineNum="7" parent="globals/FACEApp" pc="268435799" symbol="initialize"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="15" lineNum="8" parent="globals/FACEApp" pc="268435801" symbol="initialize"/>
+<entry filename="C:\\Users\\Username\\Desktop\\FACE\\source\\FACEApp.mc" id="16" lineNum="16" parent="globals/FACEApp" pc="268435814" symbol="onStop"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="24" parent="globals/Rez/Layouts" pc="268435817" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="25" parent="globals/Rez/Layouts" pc="268435828" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="26" parent="globals/Rez/Layouts" pc="268435861" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="27" parent="globals/Rez/Layouts" pc="268435894" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="29" parent="globals/Rez/Layouts" pc="268435994" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="31" parent="globals/Rez/Layouts" pc="268436094" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="33" parent="globals/Rez/Layouts" pc="268436194" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="35" parent="globals/Rez/Layouts" pc="268436294" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="37" parent="globals/Rez/Layouts" pc="268436394" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="38" parent="globals/Rez/Layouts" pc="268436481" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="40" parent="globals/Rez/Layouts" pc="268436501" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="42" parent="globals/Rez/Layouts" pc="268436601" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="43" parent="globals/Rez/Layouts" pc="268436688" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="45" parent="globals/Rez/Layouts" pc="268436708" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="47" parent="globals/Rez/Layouts" pc="268436808" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="48" parent="globals/Rez/Layouts" pc="268436895" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="50" parent="globals/Rez/Layouts" pc="268436915" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="52" parent="globals/Rez/Layouts" pc="268437015" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="53" parent="globals/Rez/Layouts" pc="268437102" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="55" parent="globals/Rez/Layouts" pc="268437122" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Username\\Desktop\\FACE\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="17" lineNum="57" parent="globals/Rez/Layouts" pc="268437222" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8389346" symbol="text"/>
+<entry field="true" id="17" symbol="weatherIcon"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry field="true" id="14" symbol="lightIcon"/>
+<entry field="true" id="20" symbol="plantV"/>
+<entry field="true" id="13" symbol="heartIcon"/>
+<entry id="8" object="true" symbol="FACEView"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="9" method="true" symbol="&lt;globals/FACEView/&lt;&gt;drawReferenceLines&gt;"/>
+<entry field="true" id="18" symbol="geist_110"/>
+<entry field="true" id="21" symbol="AppName"/>
+<entry id="6" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="8389348" symbol="font"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="15" symbol="stepIcon"/>
+<entry field="true" id="10" symbol="geist"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="7" object="true" symbol="FACEApp"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry field="true" id="19" symbol="geist_27"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="12" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="16" symbol="stepsIcon"/>
+<entry id="11" module="true" symbol="Layouts"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="8390079" symbol="y"/>
+<entry field="true" id="8390078" symbol="x"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435575" name="dc" stackId="1" startPc="268435525"/>
+<entry endPc="268435574" name="WIDTH" stackId="2" startPc="268435528"/>
+<entry endPc="268435574" name="HEIGHT" stackId="3" startPc="268435528"/>
+<entry arg="true" endPc="268435611" name="dc" stackId="1" startPc="268435576"/>
+<entry arg="true" endPc="268435763" name="dc" stackId="1" startPc="268435627"/>
+<entry endPc="268435762" name="clockTime" stackId="2" startPc="268435630"/>
+<entry endPc="268435762" name="timeHourString" stackId="3" startPc="268435630"/>
+<entry endPc="268435762" name="timeMinString" stackId="4" startPc="268435630"/>
+<entry arg="true" endPc="268437291" name="dc" stackId="1" startPc="268435817"/>
+<entry endPc="268437291" name="local_Rez_Fonts_geist_27" stackId="2" startPc="268435828"/>
+<entry endPc="268437291" name="local_Rez_Fonts_geist_110" stackId="3" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TextLabel" stackId="4" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TextLabe2" stackId="5" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TimeHourTestLabel" stackId="6" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TimeMinTestTestLabel" stackId="7" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_secondLabel" stackId="8" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_bitmap_heartIcon" stackId="9" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TextLabe4" stackId="10" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_bitmap_weatherIcon" stackId="11" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TextLabe5" stackId="12" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_bitmap_stepIcon" stackId="13" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TextLabe3" stackId="14" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_bitmap_lightIcon" stackId="15" startPc="268435828"/>
+<entry endPc="268437291" name="rez_cmp_local_text_TextLabe6" stackId="16" startPc="268435828"/>
+</localVars>
+<deviceInfo deviceVersion="b95fefb865d83bb27859a71c9d038a0343d1e5ce" partNumber="006-B4433-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="lightIcon"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="stepIcon"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="plantV"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="geist_27"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="stepsIcon"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="heartIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="geist_110"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="weatherIcon"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/FACEView" offset="134" parentId="globals" symbolId="FACEView" type="class"/>
+<dataEntry label="globals/Rez" offset="277" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/FACEApp" offset="339" parentId="globals" symbolId="FACEApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="410" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="490" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="525" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="578" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="FACEView" startPc="268435481">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="FACEApp" startPc="268435513">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="FACEView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="FACEView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268435575" name="&lt;globals/FACEView/&lt;&gt;drawReferenceLines&gt;" parent="FACEView" startPc="268435525">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435611" name="onLayout" parent="FACEView" startPc="268435576">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="FACEView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435626" name="initialize" parent="FACEView" startPc="268435612">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="FACEView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435763" name="onUpdate" parent="FACEView" startPc="268435627">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435766" name="onStart" parent="FACEApp" startPc="268435764">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435798" name="getInitialView" parent="FACEApp" startPc="268435767">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435813" name="initialize" parent="FACEApp" startPc="268435799">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435816" name="onStop" parent="FACEApp" startPc="268435814">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437291" name="WatchFace" parent="Layouts" startPc="268435817">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

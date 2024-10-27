@@ -1,0 +1,6 @@
+<fonts>
+    <font id="geist_110" filename="geistBlack110.fnt"
+        antialias="true" />
+    <font id="geist_27" filename="geistBlack27.fnt"
+        antialias="true" />
+</fonts>
