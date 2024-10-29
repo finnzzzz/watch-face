@@ -1,55 +1,15 @@
 <layout id="WatchFace">
-    <label id="TextLabel" text="2024" x="center" y="5%" font="@Fonts.geist_27"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <label id="TextLabe2" text="27 Sun" x="35%" y="25%" font="@Fonts.geist_27"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    
-
-    <label id="TimeHourTestLabel" text="11" x="29%" y="center" font="@Fonts.geist_110"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="#AFCFFF" />
-    <label id="TimeMinTestTestLabel" text="22" x="62%" y="center" font="@Fonts.geist_110"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <label id="secondLabel" text="11" x="83%" y="52%" font="@Fonts.geist_27"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-
-    <!-- <label id="TimeHourLabel" x="29%" y="center" font="@Fonts.geist_110"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="#AFCFFF" />
-    <label id="TimeMinLabel" x="62%" y="center" font="@Fonts.geist_110"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <label id="secondLabel" text="22" x="83%" y="52%" font="@Fonts.geist_27"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" /> -->
-
-
-    <bitmap id="heartIcon"
+    <!-- <bitmap id="heartIcon"
         x="32%"
         y="65.5%"
         filename="../drawables/heart.png" />
-    <label id="TextLabe4" text="168" x="42%" y="64%" font="@Fonts.geist_27"
+    <label id="TextLabe4" text="168" x="42%" y="64%" font="@Fonts.geist_26"
         justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
 
     <bitmap id="weatherIcon"
         x="53%"
         y="66%"
         filename="../drawables/weather.png" />
-    <label id="TextLabe5" text="26" x="63%" y="64%" font="@Fonts.geist_27"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-
-    <bitmap id="stepIcon"
-        x="50%"
-        y="26%"
-        filename="../drawables/steps.png" />
-    <label id="TextLabe3" text="2500" x="65%" y="25%" font="@Fonts.geist_27"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-
-    <bitmap id="lightIcon"
-        x="53%"
-        y="90%"
-        filename="../drawables/light.png" />
-    <label id="TextLabe6" text="90%" x="center" y="90%" font="@Fonts.geist_27"
-        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-
+    <label id="TextLabe5" text="26" x="63%" y="64%" font="@Fonts.geist_26"
+        justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" /> -->
 </layout>

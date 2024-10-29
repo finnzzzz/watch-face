@@ -4,17 +4,10 @@ import Toybox.System;
 import Toybox.WatchUi;
 
 class FACEView extends WatchUi.WatchFace {
-  var font;
-  var geist;
-  var x;
-  var y;
-
   function initialize() { WatchFace.initialize(); }
 
   // Load your resources here
   function onLayout(dc as Dc) as Void {
-    // font = WatchUi.loadResource(Rez.Fonts.plantV);
-    // geist = WatchUi.loadResource(Rez.Fonts.geist);
     setLayout(Rez.Layouts.WatchFace(dc));
   }
 
@@ -25,24 +18,150 @@ class FACEView extends WatchUi.WatchFace {
 
   // Update the view
   function onUpdate(dc as Dc) as Void {
-    // dc.drawText(x, y,
-    //             font,
-    //             "12:34", Graphics.TEXT_JUSTIFY_CENTER);
-    // Get and show the current time
-    var clockTime = System.getClockTime();
-    var timeHourString = Lang.format("$1$", [clockTime.hour.format("%02d")]);
-    var timeMinString = Lang.format("$1$", [clockTime.min.format("%02d")]);
-
-    // var hourView = View.findDrawableById("TimeHourLabel") as Text;
-    // var minView = View.findDrawableById("TimeMinLabel") as Text;
-
-    // hourView.setText(timeHourString);
-    // minView.setText(timeMinString);
-
-    // Call the parent onUpdate function to redraw the layout
     View.onUpdate(dc);
+    drawTime(dc);
+    drawHeartRate(dc);
+    drawSteps(dc);
+    drawBattery(dc);
+    drawDate(dc);
+    // drawReferenceLines(dc);
+  }
 
-    drawReferenceLines(dc);
+  function drawHeartRate(dc) {
+    var geistFont = WatchUi.loadResource(Rez.Fonts.geist_26);
+    var heartIcon = WatchUi.loadResource(Rez.Drawables.heartIcon);
+    var heartRate = getHeartRateString();
+
+    var centerX = dc.getWidth() / 2;
+    var centerY = dc.getHeight() / 2;
+
+    var iconWidth = 14;
+    var spacing = 5;
+
+    var textDimensions = dc.getTextDimensions(heartRate, geistFont);
+    var textWidth = textDimensions[0];
+    var textHeight = textDimensions[1];
+
+    var totalWidth = iconWidth + spacing + textWidth;
+    var startX = centerX - totalWidth / 2;
+
+    var iconY = centerY - iconWidth / 2;
+    var textY = centerY - textHeight / 2;
+    var offsetY = 67;
+
+    dc.drawBitmap(startX, iconY + offsetY, heartIcon);
+
+    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(startX + iconWidth + spacing, textY + offsetY, geistFont,
+                heartRate, Graphics.TEXT_JUSTIFY_LEFT);
+  }
+
+  function drawSteps(dc) {
+    var geistFont = WatchUi.loadResource(Rez.Fonts.geist_26);
+    var stepsIcon = WatchUi.loadResource(Rez.Drawables.stepsIcon);
+    var steps = getStepsString();
+
+    var centerX = dc.getWidth() / 2;
+    var centerY = dc.getHeight() / 2;
+
+    var iconWidth = 14;
+    var spacing = 5;
+
+    var textDimensions = dc.getTextDimensions(steps, geistFont);
+    var textWidth = textDimensions[0];
+    var textHeight = textDimensions[1];
+
+    var totalWidth = iconWidth + spacing + textWidth;
+    var startX = centerX - totalWidth / 2;
+
+    var iconY = centerY - iconWidth / 2;
+    var textY = centerY - textHeight / 2;
+    var offsetY = 107;
+
+    dc.drawBitmap(startX, iconY + offsetY, stepsIcon);
+
+    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(startX + iconWidth + spacing, textY + offsetY, geistFont, steps,
+                Graphics.TEXT_JUSTIFY_LEFT);
+  }
+
+  function drawBattery(dc) {
+    var geistFont = WatchUi.loadResource(Rez.Fonts.geist_26);
+    var lightIcon = WatchUi.loadResource(Rez.Drawables.lightIcon);
+    var battery = getBatteryString();
+
+    var centerX = dc.getWidth() / 2;
+    var centerY = dc.getHeight() / 2;
+
+    var iconWidth = 14;
+    var spacing = 5;
+
+    var textDimensions = dc.getTextDimensions(battery, geistFont);
+    var textWidth = textDimensions[0];
+    var textHeight = textDimensions[1];
+
+    var totalWidth = iconWidth + spacing + textWidth;
+    var startX = centerX - totalWidth / 2;
+
+    var iconY = centerY - iconWidth / 2;
+    var textY = centerY - textHeight / 2;
+    var offsetY = 165;
+
+    dc.drawBitmap(startX, iconY + offsetY, lightIcon);
+
+    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(startX + iconWidth + spacing, textY + offsetY, geistFont,
+                battery, Graphics.TEXT_JUSTIFY_LEFT);
+  }
+
+  function drawDate(dc) {
+    var geistFont = WatchUi.loadResource(Rez.Fonts.geist_26);
+    var date = getDateString();
+
+    var centerX = dc.getWidth() / 2;
+    var centerY = dc.getHeight() / 2;
+
+    var textDimensions = dc.getTextDimensions(date, geistFont);
+    var textWidth = textDimensions[0];
+    var textHeight = textDimensions[1];
+
+    var totalWidth = textWidth;
+    var startX = centerX - totalWidth / 2;
+
+    var textY = centerY - textHeight / 2;
+    var offsetY = -87;
+
+    dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(startX, textY + offsetY, geistFont, date,
+                Graphics.TEXT_JUSTIFY_LEFT);
+  }
+
+  function drawTime(dc) {
+    var clockTime = System.getClockTime();
+    var timeHourString = clockTime.hour.format("%02d");
+    var timeMinString = clockTime.min.format("%02d");
+
+    var centerX = dc.getWidth() / 2;
+    var centerY = dc.getHeight() / 2;
+
+    var geistFont = WatchUi.loadResource(Rez.Fonts.geist_110);
+
+    var hourDimensions = dc.getTextDimensions(timeHourString, geistFont);
+    var minDimensions = dc.getTextDimensions(timeMinString, geistFont);
+
+    var spacing = 15;  
+    var totalWidth = hourDimensions[0] + spacing + minDimensions[0];
+
+    var startX = centerX - (totalWidth / 2);
+    var offsetY = -60;
+
+    dc.setColor(0xAFCFFF, Graphics.COLOR_TRANSPARENT);
+     dc.drawText(startX, centerY + offsetY, geistFont, timeHourString,
+                Graphics.TEXT_JUSTIFY_LEFT);
+
+     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+     dc.drawText(startX + hourDimensions[0] + spacing, centerY + offsetY, geistFont,
+                 timeMinString, Graphics.TEXT_JUSTIFY_LEFT);
   }
 
  private
@@ -52,28 +171,76 @@ class FACEView extends WatchUi.WatchFace {
 
     dc.setPenWidth(1);
 
-    // dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-    // dc.drawRectangle(0.2 * WIDTH, 0.1 * HEIGHT, 0.6 * WIDTH, 0.8 * HEIGHT);
-    // dc.drawRectangle(0.15 * WIDTH, 0.15 * HEIGHT, 0.7 * WIDTH, 0.7 * HEIGHT);
-    // dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-    // dc.drawRectangle(0.1 * WIDTH, 0.2 * HEIGHT, 0.8 * WIDTH, 0.6 * HEIGHT);
-    // dc.drawRectangle(0.05 * WIDTH, 0.3 * HEIGHT, 0.9 * WIDTH, 0.4 * HEIGHT);
-
     dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-    // dc.fillRectangle(0, 0.3 * HEIGHT, WIDTH, 1);
-    // dc.fillRectangle(0, 0.5 * HEIGHT, WIDTH, 1);
-    // dc.fillRectangle(0, 0.7 * HEIGHT, WIDTH, 1);
-    // dc.fillRectangle(0.25 * WIDTH, 0, 1, HEIGHT);
+    dc.fillRectangle(0, 0.5 * HEIGHT, WIDTH, 1);
+    dc.fillRectangle(0.25 * WIDTH, 0, 1, HEIGHT);
 
-    // dc.fillRectangle(0.1 * WIDTH, 0, 1, HEIGHT);
-    // dc.fillRectangle(0.9 * WIDTH, 0, 1, HEIGHT);
+    dc.fillRectangle(0.5 * WIDTH, 0, 1, HEIGHT);
+    dc.fillRectangle(0.75 * WIDTH, 0, 1, HEIGHT);
+  }
 
-    // dc.fillRectangle(0.5 * WIDTH, 0, 1, HEIGHT);
-    // dc.fillRectangle(0.75 * WIDTH, 0, 1, HEIGHT);
+ private
+  function getHeartRate() as Number {
+    var heartrateIterator = Toybox.ActivityMonitor.getHeartRateHistory(1, true);
+    return heartrateIterator.next().heartRate;
+  }
 
-    // dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-    // dc.fillRectangle(0.3333 * WIDTH, 0, 1, HEIGHT);
-    // dc.fillRectangle(0.6666 * WIDTH, 0, 1, HEIGHT);
+ private
+  function getHeartRateString() as String {
+    return getHeartRate().format("%d");
+  }
+
+ private
+  function getSteps() as Lang.Number ? {
+    return Toybox.ActivityMonitor.getInfo().steps;
+  }
+
+ private
+  function getStepsString() as String {
+    var steps = getSteps();
+    if (steps == null) {
+      return "-";
+    }
+    return getSteps().format("%d");
+  }
+
+ private
+  function getBattery() {
+    var stats = System.getSystemStats();
+    return stats.battery;
+  }
+
+ private
+  function getBatteryString() as String {
+    var battery = getBattery();
+    if (battery == null) {
+      return "-";
+    }
+    return getBattery().format("%d") + "%";
+  }
+ private
+  function getDateString() as String {
+    var timeOptions = { :currentTimeType => Time.CURRENT_TIME_DEFAULT};
+    var now = Time.getCurrentTime(timeOptions);
+    var info = Time.Gregorian.info(now, Time.FORMAT_SHORT);
+    var months = [
+      "JAN",
+      "FEB",
+      "MAR",
+      "APR",
+      "MAY",
+      "JUN",
+      "JUL",
+      "AUG",
+      "SEP",
+      "OCT",
+      "NOV",
+      "DEC",
+    ];
+    var days = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
+    return Lang.format(
+        "$1$ $2$. $3$",
+        [ info.day, months[info.month - 1], days[info.day_of_week] ]);
   }
 
   // Called when this View is removed from the screen. Save the

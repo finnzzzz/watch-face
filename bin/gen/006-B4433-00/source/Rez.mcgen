@@ -10,51 +10,17 @@ module Rez {
         (:initialized) var heartIcon as ResourceId;
         (:initialized) var weatherIcon as ResourceId;
         (:initialized) var lightIcon as ResourceId;
-        (:initialized) var stepIcon as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
     module Fonts {
-        (:initialized) var plantV as ResourceId;
         (:initialized) var geist_110 as ResourceId;
-        (:initialized) var geist_27 as ResourceId;
+        (:initialized) var geist_26 as ResourceId;
     } // Fonts
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var local_Rez_Fonts_geist_27 = (WatchUi.loadResource($.Rez.Fonts.geist_27) as Graphics.FontReference);
-            var local_Rez_Fonts_geist_110 = (WatchUi.loadResource($.Rez.Fonts.geist_110) as Graphics.FontReference);
-            var rez_cmp_local_text_TextLabel = new WatchUi.Text({:identifier=>"TextLabel", :color=>Graphics.COLOR_WHITE, :locX=>(390 * 0.5), :locY=>(390 * (5 / 100.0)), :text=>"2024", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_27});
-
-            var rez_cmp_local_text_TextLabe2 = new WatchUi.Text({:identifier=>"TextLabe2", :color=>Graphics.COLOR_WHITE, :locX=>(390 * (35 / 100.0)), :locY=>(390 * (25 / 100.0)), :text=>"27 Sun", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_27});
-
-            var rez_cmp_local_text_TimeHourTestLabel = new WatchUi.Text({:identifier=>"TimeHourTestLabel", :color=>0xAFCFFF, :locX=>(390 * (29 / 100.0)), :locY=>((390 - 110) * 0.5), :text=>"11", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_110});
-
-            var rez_cmp_local_text_TimeMinTestTestLabel = new WatchUi.Text({:identifier=>"TimeMinTestTestLabel", :color=>Graphics.COLOR_WHITE, :locX=>(390 * (62 / 100.0)), :locY=>((390 - 110) * 0.5), :text=>"22", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_110});
-
-            var rez_cmp_local_text_secondLabel = new WatchUi.Text({:identifier=>"secondLabel", :color=>Graphics.COLOR_WHITE, :locX=>(390 * (83 / 100.0)), :locY=>(390 * (52 / 100.0)), :text=>"11", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_27});
-
-            var rez_cmp_local_bitmap_heartIcon = new WatchUi.Bitmap({:identifier=>"heartIcon", :rezId=>$.Rez.Drawables.heartIcon, :locX=>(390 * (32 / 100.0)), :locY=>(390 * (65.5 / 100.0))});
-            rez_cmp_local_bitmap_heartIcon.setLocation((390 * (32 / 100.0)), (390 * (65.5 / 100.0)));
-
-            var rez_cmp_local_text_TextLabe4 = new WatchUi.Text({:identifier=>"TextLabe4", :color=>Graphics.COLOR_WHITE, :locX=>(390 * (42 / 100.0)), :locY=>(390 * (64 / 100.0)), :text=>"168", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_27});
-
-            var rez_cmp_local_bitmap_weatherIcon = new WatchUi.Bitmap({:identifier=>"weatherIcon", :rezId=>$.Rez.Drawables.weatherIcon, :locX=>(390 * (53 / 100.0)), :locY=>(390 * (66 / 100.0))});
-            rez_cmp_local_bitmap_weatherIcon.setLocation((390 * (53 / 100.0)), (390 * (66 / 100.0)));
-
-            var rez_cmp_local_text_TextLabe5 = new WatchUi.Text({:identifier=>"TextLabe5", :color=>Graphics.COLOR_WHITE, :locX=>(390 * (63 / 100.0)), :locY=>(390 * (64 / 100.0)), :text=>"26", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_27});
-
-            var rez_cmp_local_bitmap_stepIcon = new WatchUi.Bitmap({:identifier=>"stepIcon", :rezId=>$.Rez.Drawables.stepIcon, :locX=>(390 * (50 / 100.0)), :locY=>(390 * (26 / 100.0))});
-            rez_cmp_local_bitmap_stepIcon.setLocation((390 * (50 / 100.0)), (390 * (26 / 100.0)));
-
-            var rez_cmp_local_text_TextLabe3 = new WatchUi.Text({:identifier=>"TextLabe3", :color=>Graphics.COLOR_WHITE, :locX=>(390 * (65 / 100.0)), :locY=>(390 * (25 / 100.0)), :text=>"2500", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_27});
-
-            var rez_cmp_local_bitmap_lightIcon = new WatchUi.Bitmap({:identifier=>"lightIcon", :rezId=>$.Rez.Drawables.lightIcon, :locX=>(390 * (53 / 100.0)), :locY=>(390 * (90 / 100.0))});
-            rez_cmp_local_bitmap_lightIcon.setLocation((390 * (53 / 100.0)), (390 * (90 / 100.0)));
-
-            var rez_cmp_local_text_TextLabe6 = new WatchUi.Text({:identifier=>"TextLabe6", :color=>Graphics.COLOR_WHITE, :locX=>(390 * 0.5), :locY=>(390 * (90 / 100.0)), :text=>"90%", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_geist_27});
-
-            return [rez_cmp_local_text_TextLabel, rez_cmp_local_text_TextLabe2, rez_cmp_local_text_TimeHourTestLabel, rez_cmp_local_text_TimeMinTestTestLabel, rez_cmp_local_text_secondLabel, rez_cmp_local_bitmap_heartIcon, rez_cmp_local_text_TextLabe4, rez_cmp_local_bitmap_weatherIcon, rez_cmp_local_text_TextLabe5, rez_cmp_local_bitmap_stepIcon, rez_cmp_local_text_TextLabe3, rez_cmp_local_bitmap_lightIcon, rez_cmp_local_text_TextLabe6] as Array<WatchUi.Drawable>;
+            return [] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
