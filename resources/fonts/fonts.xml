@@ -3,4 +3,6 @@
         antialias="true" />
     <font id="geist_26" filename="geistSemiBold26.fnt"
         antialias="true" />
+    <font id="geist_20" filename="geistSemiBold20.fnt"
+        antialias="true" />
 </fonts>

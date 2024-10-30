@@ -15,19 +15,21 @@ class FACEView extends WatchUi.WatchFace{
     static
     <init> {
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 7; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 7; @position = 6; ]
+    var isHighPower = true;
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 9; ]
     function initialize() as Void {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_7_24_7_50_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 7 26 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_9_24_9_50_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 9 26 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_Username_Desktop_FACE_source_FACEView_mc_7_24_7_50_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_9_24_9_50_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 10; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 12; ]
     function onLayout(dc as Dc) as Void {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_10_38_12_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 11 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_12_38_14_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 13 4 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -36,51 +38,51 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_10_38_12_2_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_10_38_12_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_12_38_14_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 17; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 19; ]
     function onShow() as Void {
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 20; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 22; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_20_38_28_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 21 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_22_38_30_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 23 4 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 22 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 24 4 ]
         %tmp.6 = self;
         %tmp.7 = getv function %tmp.6 :drawTime;
         %tmp.9 = lgetv %dc;
         invoke %tmp.6 %tmp.7(%tmp.9);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 23 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 25 4 ]
         %tmp.10 = self;
         %tmp.11 = getv function %tmp.10 :drawHeartRate;
         %tmp.13 = lgetv %dc;
         invoke %tmp.10 %tmp.11(%tmp.13);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 24 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 26 4 ]
         %tmp.14 = self;
         %tmp.15 = getv function %tmp.14 :drawSteps;
         %tmp.17 = lgetv %dc;
         invoke %tmp.14 %tmp.15(%tmp.17);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 25 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 27 4 ]
         %tmp.18 = self;
         %tmp.19 = getv function %tmp.18 :drawBattery;
         %tmp.21 = lgetv %dc;
         invoke %tmp.18 %tmp.19(%tmp.21);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 26 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 28 4 ]
         %tmp.22 = self;
         %tmp.23 = getv function %tmp.22 :drawDate;
         %tmp.25 = lgetv %dc;
         invoke %tmp.22 %tmp.23(%tmp.25);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_20_38_28_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_22_38_30_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 30; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 32; ]
     function drawHeartRate(dc) {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 31 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 33 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %geistFont.1 = local;
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :loadResource;
@@ -89,8 +91,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.6 = getv %tmp.5 :geist_26;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
         lputv %geistFont.1 %tmp.7;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 32 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 34 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %heartIcon.2 = local;
         %tmp.8 = getm $.Toybox.WatchUi;
         %tmp.9 = getv function %tmp.8 :loadResource;
@@ -99,15 +101,15 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.13 = getv %tmp.12 :heartIcon;
         %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
         lputv %heartIcon.2 %tmp.14;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 33 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 35 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %heartRate.3 = local;
         %tmp.15 = self;
         %tmp.16 = getv function %tmp.15 :getHeartRateString;
         %tmp.17 = invoke %tmp.15 %tmp.16();
         lputv %heartRate.3 %tmp.17;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 35 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 37 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %centerX.4 = local;
         %tmp.18 = lgetv %dc;
         %tmp.19 = getv function %tmp.18 :getWidth;
@@ -115,8 +117,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.21 = 2;
         %tmp.22 = div %tmp.20 %tmp.21;
         lputv %centerX.4 %tmp.22;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 36 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 38 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %centerY.5 = local;
         %tmp.23 = lgetv %dc;
         %tmp.24 = getv function %tmp.23 :getHeight;
@@ -124,18 +126,18 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.26 = 2;
         %tmp.27 = div %tmp.25 %tmp.26;
         lputv %centerY.5 %tmp.27;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 38 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 40 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %iconWidth.6 = local;
         %tmp.28 = 14;
         lputv %iconWidth.6 %tmp.28;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 39 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
-        %spacing.7 = local;
-        %tmp.29 = 5;
-        lputv %spacing.7 %tmp.29;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 41 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
+        %spacing.7 = local;
+        %tmp.29 = 10;
+        lputv %spacing.7 %tmp.29;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 43 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %textDimensions.8 = local;
         %tmp.30 = lgetv %dc;
         %tmp.31 = getv function %tmp.30 :getTextDimensions;
@@ -143,22 +145,22 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.35 = lgetv %geistFont.1;
         %tmp.36 = invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35);
         lputv %textDimensions.8 %tmp.36;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 42 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 44 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %textWidth.9 = local;
         %tmp.38 = lgetv %textDimensions.8;
         %tmp.39 = 0;
         %tmp.40 = agetv %tmp.38 %tmp.39;
         lputv %textWidth.9 %tmp.40;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 43 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 45 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %textHeight.10 = local;
         %tmp.42 = lgetv %textDimensions.8;
         %tmp.43 = 1;
         %tmp.44 = agetv %tmp.42 %tmp.43;
         lputv %textHeight.10 %tmp.44;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 45 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 47 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %totalWidth.11 = local;
         %tmp.46 = lgetv %iconWidth.6;
         %tmp.48 = lgetv %spacing.7;
@@ -166,8 +168,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.51 = lgetv %textWidth.9;
         %tmp.52 = add %tmp.49 %tmp.51;
         lputv %totalWidth.11 %tmp.52;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 46 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 48 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %startX.12 = local;
         %tmp.54 = lgetv %centerX.4;
         %tmp.56 = lgetv %totalWidth.11;
@@ -175,8 +177,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.58 = div %tmp.56 %tmp.57;
         %tmp.59 = sub %tmp.54 %tmp.58;
         lputv %startX.12 %tmp.59;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 48 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 50 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %iconY.13 = local;
         %tmp.61 = lgetv %centerY.5;
         %tmp.63 = lgetv %iconWidth.6;
@@ -184,8 +186,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.65 = div %tmp.63 %tmp.64;
         %tmp.66 = sub %tmp.61 %tmp.65;
         lputv %iconY.13 %tmp.66;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 49 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 51 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
         %textY.14 = local;
         %tmp.68 = lgetv %centerY.5;
         %tmp.70 = lgetv %textHeight.10;
@@ -193,12 +195,12 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.72 = div %tmp.70 %tmp.71;
         %tmp.73 = sub %tmp.68 %tmp.72;
         lputv %textY.14 %tmp.73;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 50 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop" ]
-        %offsetY.15 = local;
-        %tmp.74 = 67;
-        lputv %offsetY.15 %tmp.74;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 52 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop" ]
+        %offsetY.15 = local;
+        %tmp.74 = 65;
+        lputv %offsetY.15 %tmp.74;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 54 4 ]
         %tmp.75 = lgetv %dc;
         %tmp.76 = getv function %tmp.75 :drawBitmap;
         %tmp.78 = lgetv %startX.12;
@@ -207,7 +209,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.83 = add %tmp.80 %tmp.82;
         %tmp.85 = lgetv %heartIcon.2;
         invoke %tmp.75 %tmp.76(%tmp.78, %tmp.83, %tmp.85);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 54 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 56 4 ]
         %tmp.86 = lgetv %dc;
         %tmp.87 = getv function %tmp.86 :setColor;
         %tmp.88 = getm $.Toybox.Graphics;
@@ -215,7 +217,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.90 = getm $.Toybox.Graphics;
         %tmp.91 = getv %tmp.90 :COLOR_TRANSPARENT;
         invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 55 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 57 4 ]
         %tmp.92 = lgetv %dc;
         %tmp.93 = getv function %tmp.92 :drawText;
         %tmp.95 = lgetv %startX.12;
@@ -231,13 +233,13 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_start:
         %tmp.111 = getm $.Toybox.Graphics;
         %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.92 %tmp.93(%tmp.101, %tmp.106, %tmp.108, %tmp.110, %tmp.112);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_30_29_57_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_32_29_59_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 59; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 61; ]
     function drawSteps(dc) {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 60 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 62 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %geistFont.1 = local;
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :loadResource;
@@ -246,8 +248,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.6 = getv %tmp.5 :geist_26;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
         lputv %geistFont.1 %tmp.7;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 61 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 63 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %stepsIcon.2 = local;
         %tmp.8 = getm $.Toybox.WatchUi;
         %tmp.9 = getv function %tmp.8 :loadResource;
@@ -256,15 +258,15 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.13 = getv %tmp.12 :stepsIcon;
         %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
         lputv %stepsIcon.2 %tmp.14;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 62 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 64 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %steps.3 = local;
         %tmp.15 = self;
         %tmp.16 = getv function %tmp.15 :getStepsString;
         %tmp.17 = invoke %tmp.15 %tmp.16();
         lputv %steps.3 %tmp.17;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 64 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 66 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %centerX.4 = local;
         %tmp.18 = lgetv %dc;
         %tmp.19 = getv function %tmp.18 :getWidth;
@@ -272,8 +274,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.21 = 2;
         %tmp.22 = div %tmp.20 %tmp.21;
         lputv %centerX.4 %tmp.22;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 65 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 67 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %centerY.5 = local;
         %tmp.23 = lgetv %dc;
         %tmp.24 = getv function %tmp.23 :getHeight;
@@ -281,18 +283,18 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.26 = 2;
         %tmp.27 = div %tmp.25 %tmp.26;
         lputv %centerY.5 %tmp.27;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 67 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 69 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %iconWidth.6 = local;
         %tmp.28 = 14;
         lputv %iconWidth.6 %tmp.28;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 68 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
-        %spacing.7 = local;
-        %tmp.29 = 5;
-        lputv %spacing.7 %tmp.29;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 70 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
+        %spacing.7 = local;
+        %tmp.29 = 10;
+        lputv %spacing.7 %tmp.29;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 72 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %textDimensions.8 = local;
         %tmp.30 = lgetv %dc;
         %tmp.31 = getv function %tmp.30 :getTextDimensions;
@@ -300,22 +302,22 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.35 = lgetv %geistFont.1;
         %tmp.36 = invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35);
         lputv %textDimensions.8 %tmp.36;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 71 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 73 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %textWidth.9 = local;
         %tmp.38 = lgetv %textDimensions.8;
         %tmp.39 = 0;
         %tmp.40 = agetv %tmp.38 %tmp.39;
         lputv %textWidth.9 %tmp.40;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 72 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 74 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %textHeight.10 = local;
         %tmp.42 = lgetv %textDimensions.8;
         %tmp.43 = 1;
         %tmp.44 = agetv %tmp.42 %tmp.43;
         lputv %textHeight.10 %tmp.44;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 74 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 76 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %totalWidth.11 = local;
         %tmp.46 = lgetv %iconWidth.6;
         %tmp.48 = lgetv %spacing.7;
@@ -323,8 +325,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.51 = lgetv %textWidth.9;
         %tmp.52 = add %tmp.49 %tmp.51;
         lputv %totalWidth.11 %tmp.52;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 75 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 77 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %startX.12 = local;
         %tmp.54 = lgetv %centerX.4;
         %tmp.56 = lgetv %totalWidth.11;
@@ -332,8 +334,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.58 = div %tmp.56 %tmp.57;
         %tmp.59 = sub %tmp.54 %tmp.58;
         lputv %startX.12 %tmp.59;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 77 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 79 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %iconY.13 = local;
         %tmp.61 = lgetv %centerY.5;
         %tmp.63 = lgetv %iconWidth.6;
@@ -341,8 +343,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.65 = div %tmp.63 %tmp.64;
         %tmp.66 = sub %tmp.61 %tmp.65;
         lputv %iconY.13 %tmp.66;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 78 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 80 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %textY.14 = local;
         %tmp.68 = lgetv %centerY.5;
         %tmp.70 = lgetv %textHeight.10;
@@ -350,12 +352,12 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.72 = div %tmp.70 %tmp.71;
         %tmp.73 = sub %tmp.68 %tmp.72;
         lputv %textY.14 %tmp.73;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 79 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 81 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop" ]
         %offsetY.15 = local;
         %tmp.74 = 107;
         lputv %offsetY.15 %tmp.74;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 81 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 83 4 ]
         %tmp.75 = lgetv %dc;
         %tmp.76 = getv function %tmp.75 :drawBitmap;
         %tmp.78 = lgetv %startX.12;
@@ -364,7 +366,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.83 = add %tmp.80 %tmp.82;
         %tmp.85 = lgetv %stepsIcon.2;
         invoke %tmp.75 %tmp.76(%tmp.78, %tmp.83, %tmp.85);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 83 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 85 4 ]
         %tmp.86 = lgetv %dc;
         %tmp.87 = getv function %tmp.86 :setColor;
         %tmp.88 = getm $.Toybox.Graphics;
@@ -372,7 +374,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.90 = getm $.Toybox.Graphics;
         %tmp.91 = getv %tmp.90 :COLOR_TRANSPARENT;
         invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 84 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 86 4 ]
         %tmp.92 = lgetv %dc;
         %tmp.93 = getv function %tmp.92 :drawText;
         %tmp.95 = lgetv %startX.12;
@@ -388,23 +390,23 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_start:
         %tmp.111 = getm $.Toybox.Graphics;
         %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.92 %tmp.93(%tmp.101, %tmp.106, %tmp.108, %tmp.110, %tmp.112);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_59_25_86_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_61_25_88_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 88; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 90; ]
     function drawBattery(dc) {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 89 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 91 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %geistFont.1 = local;
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :loadResource;
         %tmp.4 = getv ? :Rez;
         %tmp.5 = getv %tmp.4 :Fonts;
-        %tmp.6 = getv %tmp.5 :geist_26;
+        %tmp.6 = getv %tmp.5 :geist_20;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
         lputv %geistFont.1 %tmp.7;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 90 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 92 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %lightIcon.2 = local;
         %tmp.8 = getm $.Toybox.WatchUi;
         %tmp.9 = getv function %tmp.8 :loadResource;
@@ -413,15 +415,15 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.13 = getv %tmp.12 :lightIcon;
         %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
         lputv %lightIcon.2 %tmp.14;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 91 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 93 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %battery.3 = local;
         %tmp.15 = self;
         %tmp.16 = getv function %tmp.15 :getBatteryString;
         %tmp.17 = invoke %tmp.15 %tmp.16();
         lputv %battery.3 %tmp.17;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 93 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 95 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %centerX.4 = local;
         %tmp.18 = lgetv %dc;
         %tmp.19 = getv function %tmp.18 :getWidth;
@@ -429,8 +431,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.21 = 2;
         %tmp.22 = div %tmp.20 %tmp.21;
         lputv %centerX.4 %tmp.22;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 94 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 96 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %centerY.5 = local;
         %tmp.23 = lgetv %dc;
         %tmp.24 = getv function %tmp.23 :getHeight;
@@ -438,18 +440,18 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.26 = 2;
         %tmp.27 = div %tmp.25 %tmp.26;
         lputv %centerY.5 %tmp.27;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 96 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 98 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %iconWidth.6 = local;
         %tmp.28 = 14;
         lputv %iconWidth.6 %tmp.28;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 97 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 99 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %spacing.7 = local;
         %tmp.29 = 5;
         lputv %spacing.7 %tmp.29;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 99 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 101 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %textDimensions.8 = local;
         %tmp.30 = lgetv %dc;
         %tmp.31 = getv function %tmp.30 :getTextDimensions;
@@ -457,22 +459,22 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.35 = lgetv %geistFont.1;
         %tmp.36 = invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35);
         lputv %textDimensions.8 %tmp.36;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 100 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 102 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %textWidth.9 = local;
         %tmp.38 = lgetv %textDimensions.8;
         %tmp.39 = 0;
         %tmp.40 = agetv %tmp.38 %tmp.39;
         lputv %textWidth.9 %tmp.40;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 101 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 103 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %textHeight.10 = local;
         %tmp.42 = lgetv %textDimensions.8;
         %tmp.43 = 1;
         %tmp.44 = agetv %tmp.42 %tmp.43;
         lputv %textHeight.10 %tmp.44;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 103 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 105 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %totalWidth.11 = local;
         %tmp.46 = lgetv %iconWidth.6;
         %tmp.48 = lgetv %spacing.7;
@@ -480,8 +482,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.51 = lgetv %textWidth.9;
         %tmp.52 = add %tmp.49 %tmp.51;
         lputv %totalWidth.11 %tmp.52;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 104 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 106 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %startX.12 = local;
         %tmp.54 = lgetv %centerX.4;
         %tmp.56 = lgetv %totalWidth.11;
@@ -489,8 +491,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.58 = div %tmp.56 %tmp.57;
         %tmp.59 = sub %tmp.54 %tmp.58;
         lputv %startX.12 %tmp.59;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 106 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 108 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %iconY.13 = local;
         %tmp.61 = lgetv %centerY.5;
         %tmp.63 = lgetv %iconWidth.6;
@@ -498,8 +500,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.65 = div %tmp.63 %tmp.64;
         %tmp.66 = sub %tmp.61 %tmp.65;
         lputv %iconY.13 %tmp.66;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 107 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 109 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
         %textY.14 = local;
         %tmp.68 = lgetv %centerY.5;
         %tmp.70 = lgetv %textHeight.10;
@@ -507,12 +509,12 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.72 = div %tmp.70 %tmp.71;
         %tmp.73 = sub %tmp.68 %tmp.72;
         lputv %textY.14 %tmp.73;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 108 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop" ]
-        %offsetY.15 = local;
-        %tmp.74 = 165;
-        lputv %offsetY.15 %tmp.74;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 110 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop" ]
+        %offsetY.15 = local;
+        %tmp.74 = 170;
+        lputv %offsetY.15 %tmp.74;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 112 4 ]
         %tmp.75 = lgetv %dc;
         %tmp.76 = getv function %tmp.75 :drawBitmap;
         %tmp.78 = lgetv %startX.12;
@@ -521,7 +523,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.83 = add %tmp.80 %tmp.82;
         %tmp.85 = lgetv %lightIcon.2;
         invoke %tmp.75 %tmp.76(%tmp.78, %tmp.83, %tmp.85);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 112 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 114 4 ]
         %tmp.86 = lgetv %dc;
         %tmp.87 = getv function %tmp.86 :setColor;
         %tmp.88 = getm $.Toybox.Graphics;
@@ -529,7 +531,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.90 = getm $.Toybox.Graphics;
         %tmp.91 = getv %tmp.90 :COLOR_TRANSPARENT;
         invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 113 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 115 4 ]
         %tmp.92 = lgetv %dc;
         %tmp.93 = getv function %tmp.92 :drawText;
         %tmp.95 = lgetv %startX.12;
@@ -545,13 +547,13 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_start:
         %tmp.111 = getm $.Toybox.Graphics;
         %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.92 %tmp.93(%tmp.101, %tmp.106, %tmp.108, %tmp.110, %tmp.112);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_88_27_115_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_90_27_117_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 117; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 119; ]
     function drawDate(dc) {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 118 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 120 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %geistFont.1 = local;
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :loadResource;
@@ -560,15 +562,15 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.6 = getv %tmp.5 :geist_26;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
         lputv %geistFont.1 %tmp.7;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 119 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 121 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %date.2 = local;
         %tmp.8 = self;
         %tmp.9 = getv function %tmp.8 :getDateString;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         lputv %date.2 %tmp.10;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 121 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 123 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %centerX.3 = local;
         %tmp.11 = lgetv %dc;
         %tmp.12 = getv function %tmp.11 :getWidth;
@@ -576,8 +578,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.14 = 2;
         %tmp.15 = div %tmp.13 %tmp.14;
         lputv %centerX.3 %tmp.15;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 122 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 124 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %centerY.4 = local;
         %tmp.16 = lgetv %dc;
         %tmp.17 = getv function %tmp.16 :getHeight;
@@ -585,8 +587,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.19 = 2;
         %tmp.20 = div %tmp.18 %tmp.19;
         lputv %centerY.4 %tmp.20;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 124 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 126 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %textDimensions.5 = local;
         %tmp.21 = lgetv %dc;
         %tmp.22 = getv function %tmp.21 :getTextDimensions;
@@ -594,27 +596,27 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.26 = lgetv %geistFont.1;
         %tmp.27 = invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26);
         lputv %textDimensions.5 %tmp.27;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 125 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 127 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %textWidth.6 = local;
         %tmp.29 = lgetv %textDimensions.5;
         %tmp.30 = 0;
         %tmp.31 = agetv %tmp.29 %tmp.30;
         lputv %textWidth.6 %tmp.31;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 126 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 128 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %textHeight.7 = local;
         %tmp.33 = lgetv %textDimensions.5;
         %tmp.34 = 1;
         %tmp.35 = agetv %tmp.33 %tmp.34;
         lputv %textHeight.7 %tmp.35;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 128 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 130 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %totalWidth.8 = local;
         %tmp.37 = lgetv %textWidth.6;
         lputv %totalWidth.8 %tmp.37;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 129 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 131 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %startX.9 = local;
         %tmp.39 = lgetv %centerX.3;
         %tmp.41 = lgetv %totalWidth.8;
@@ -622,8 +624,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.43 = div %tmp.41 %tmp.42;
         %tmp.44 = sub %tmp.39 %tmp.43;
         lputv %startX.9 %tmp.44;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 131 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 133 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
         %textY.10 = local;
         %tmp.46 = lgetv %centerY.4;
         %tmp.48 = lgetv %textHeight.7;
@@ -631,12 +633,12 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.50 = div %tmp.48 %tmp.49;
         %tmp.51 = sub %tmp.46 %tmp.50;
         lputv %textY.10 %tmp.51;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 132 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop" ]
-        %offsetY.11 = local;
-        %tmp.52 = -87;
-        lputv %offsetY.11 %tmp.52;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 134 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop" ]
+        %offsetY.11 = local;
+        %tmp.52 = -97;
+        lputv %offsetY.11 %tmp.52;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 136 4 ]
         %tmp.53 = lgetv %dc;
         %tmp.54 = getv function %tmp.53 :setColor;
         %tmp.55 = getm $.Toybox.Graphics;
@@ -644,7 +646,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.57 = getm $.Toybox.Graphics;
         %tmp.58 = getv %tmp.57 :COLOR_TRANSPARENT;
         invoke %tmp.53 %tmp.54(%tmp.56, %tmp.58);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 135 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 137 4 ]
         %tmp.59 = lgetv %dc;
         %tmp.60 = getv function %tmp.59 :drawText;
         %tmp.62 = lgetv %startX.9;
@@ -656,20 +658,20 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_start:
         %tmp.72 = getm $.Toybox.Graphics;
         %tmp.73 = getv %tmp.72 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.59 %tmp.60(%tmp.62, %tmp.67, %tmp.69, %tmp.71, %tmp.73);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_117_24_137_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_119_24_139_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 139; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 141; ]
     function drawTime(dc) {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 140 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 142 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
         %clockTime.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getClockTime;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %clockTime.1 %tmp.3;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 141 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 143 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
         %timeHourString.2 = local;
         %tmp.4 = lgetv %clockTime.1;
         %tmp.5 = getv %tmp.4 :hour;
@@ -677,8 +679,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start:
         %tmp.7 = "%02d";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         lputv %timeHourString.2 %tmp.8;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 142 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 144 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
         %timeMinString.3 = local;
         %tmp.9 = lgetv %clockTime.1;
         %tmp.10 = getv %tmp.9 :min;
@@ -686,155 +688,231 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start:
         %tmp.12 = "%02d";
         %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
         lputv %timeMinString.3 %tmp.13;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 144 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %centerX.4 = local;
-        %tmp.14 = lgetv %dc;
-        %tmp.15 = getv function %tmp.14 :getWidth;
-        %tmp.16 = invoke %tmp.14 %tmp.15();
-        %tmp.17 = 2;
-        %tmp.18 = div %tmp.16 %tmp.17;
-        lputv %centerX.4 %tmp.18;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 145 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %centerY.5 = local;
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %timeSecString.4 = local;
+        %tmp.14 = lgetv %clockTime.1;
+        %tmp.15 = getv %tmp.14 :sec;
+        %tmp.16 = getv function %tmp.15 :format;
+        %tmp.17 = "%02d";
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        lputv %timeSecString.4 %tmp.18;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 148 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %centerX.5 = local;
         %tmp.19 = lgetv %dc;
-        %tmp.20 = getv function %tmp.19 :getHeight;
+        %tmp.20 = getv function %tmp.19 :getWidth;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         %tmp.22 = 2;
         %tmp.23 = div %tmp.21 %tmp.22;
-        lputv %centerY.5 %tmp.23;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 147 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %geistFont.6 = local;
-        %tmp.24 = getm $.Toybox.WatchUi;
-        %tmp.25 = getv function %tmp.24 :loadResource;
-        %tmp.27 = getv ? :Rez;
-        %tmp.28 = getv %tmp.27 :Fonts;
-        %tmp.29 = getv %tmp.28 :geist_110;
-        %tmp.30 = invoke %tmp.24 %tmp.25(%tmp.29);
-        lputv %geistFont.6 %tmp.30;
+        lputv %centerX.5 %tmp.23;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 149 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %hourDimensions.7 = local;
-        %tmp.31 = lgetv %dc;
-        %tmp.32 = getv function %tmp.31 :getTextDimensions;
-        %tmp.34 = lgetv %timeHourString.2;
-        %tmp.36 = lgetv %geistFont.6;
-        %tmp.37 = invoke %tmp.31 %tmp.32(%tmp.34, %tmp.36);
-        lputv %hourDimensions.7 %tmp.37;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 150 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %minDimensions.8 = local;
-        %tmp.38 = lgetv %dc;
-        %tmp.39 = getv function %tmp.38 :getTextDimensions;
-        %tmp.41 = lgetv %timeMinString.3;
-        %tmp.43 = lgetv %geistFont.6;
-        %tmp.44 = invoke %tmp.38 %tmp.39(%tmp.41, %tmp.43);
-        lputv %minDimensions.8 %tmp.44;
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %centerY.6 = local;
+        %tmp.24 = lgetv %dc;
+        %tmp.25 = getv function %tmp.24 :getHeight;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = 2;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        lputv %centerY.6 %tmp.28;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 151 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %geistFont.7 = local;
+        %tmp.29 = getm $.Toybox.WatchUi;
+        %tmp.30 = getv function %tmp.29 :loadResource;
+        %tmp.32 = getv ? :Rez;
+        %tmp.33 = getv %tmp.32 :Fonts;
+        %tmp.34 = getv %tmp.33 :geist_110;
+        %tmp.35 = invoke %tmp.29 %tmp.30(%tmp.34);
+        lputv %geistFont.7 %tmp.35;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 152 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %spacing.9 = local;
-        %tmp.45 = 15;
-        lputv %spacing.9 %tmp.45;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 153 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %totalWidth.10 = local;
-        %tmp.47 = lgetv %hourDimensions.7;
-        %tmp.48 = 0;
-        %tmp.49 = agetv %tmp.47 %tmp.48;
-        %tmp.51 = lgetv %spacing.9;
-        %tmp.52 = add %tmp.49 %tmp.51;
-        %tmp.54 = lgetv %minDimensions.8;
-        %tmp.55 = 0;
-        %tmp.56 = agetv %tmp.54 %tmp.55;
-        %tmp.57 = add %tmp.52 %tmp.56;
-        lputv %totalWidth.10 %tmp.57;
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %geistFont20.8 = local;
+        %tmp.36 = getm $.Toybox.WatchUi;
+        %tmp.37 = getv function %tmp.36 :loadResource;
+        %tmp.39 = getv ? :Rez;
+        %tmp.40 = getv %tmp.39 :Fonts;
+        %tmp.41 = getv %tmp.40 :geist_20;
+        %tmp.42 = invoke %tmp.36 %tmp.37(%tmp.41);
+        lputv %geistFont20.8 %tmp.42;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 155 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %startX.11 = local;
-        %tmp.59 = lgetv %centerX.4;
-        %tmp.61 = lgetv %totalWidth.10;
-        %tmp.62 = 2;
-        %tmp.63 = div %tmp.61 %tmp.62;
-        %tmp.64 = sub %tmp.59 %tmp.63;
-        lputv %startX.11 %tmp.64;
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %hourDimensions.9 = local;
+        %tmp.43 = lgetv %dc;
+        %tmp.44 = getv function %tmp.43 :getTextDimensions;
+        %tmp.46 = lgetv %timeHourString.2;
+        %tmp.48 = lgetv %geistFont.7;
+        %tmp.49 = invoke %tmp.43 %tmp.44(%tmp.46, %tmp.48);
+        lputv %hourDimensions.9 %tmp.49;
 [ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 156 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop" ]
-        %offsetY.12 = local;
-        %tmp.65 = -60;
-        lputv %offsetY.12 %tmp.65;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 158 4 ]
-        %tmp.66 = lgetv %dc;
-        %tmp.67 = getv function %tmp.66 :setColor;
-        %tmp.68 = 0xAFCFFF;
-        %tmp.69 = getm $.Toybox.Graphics;
-        %tmp.70 = getv %tmp.69 :COLOR_TRANSPARENT;
-        invoke %tmp.66 %tmp.67(%tmp.68, %tmp.70);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 159 5 ]
-        %tmp.71 = lgetv %dc;
-        %tmp.72 = getv function %tmp.71 :drawText;
-        %tmp.74 = lgetv %startX.11;
-        %tmp.76 = lgetv %centerY.5;
-        %tmp.78 = lgetv %offsetY.12;
-        %tmp.79 = add %tmp.76 %tmp.78;
-        %tmp.81 = lgetv %geistFont.6;
-        %tmp.83 = lgetv %timeHourString.2;
-        %tmp.84 = getm $.Toybox.Graphics;
-        %tmp.85 = getv %tmp.84 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.71 %tmp.72(%tmp.74, %tmp.79, %tmp.81, %tmp.83, %tmp.85);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 162 5 ]
-        %tmp.86 = lgetv %dc;
-        %tmp.87 = getv function %tmp.86 :setColor;
-        %tmp.88 = getm $.Toybox.Graphics;
-        %tmp.89 = getv %tmp.88 :COLOR_WHITE;
-        %tmp.90 = getm $.Toybox.Graphics;
-        %tmp.91 = getv %tmp.90 :COLOR_TRANSPARENT;
-        invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 163 5 ]
-        %tmp.92 = lgetv %dc;
-        %tmp.93 = getv function %tmp.92 :drawText;
-        %tmp.95 = lgetv %startX.11;
-        %tmp.97 = lgetv %hourDimensions.7;
-        %tmp.98 = 0;
-        %tmp.99 = agetv %tmp.97 %tmp.98;
-        %tmp.100 = add %tmp.95 %tmp.99;
-        %tmp.102 = lgetv %spacing.9;
-        %tmp.103 = add %tmp.100 %tmp.102;
-        %tmp.105 = lgetv %centerY.5;
-        %tmp.107 = lgetv %offsetY.12;
-        %tmp.108 = add %tmp.105 %tmp.107;
-        %tmp.110 = lgetv %geistFont.6;
-        %tmp.112 = lgetv %timeMinString.3;
-        %tmp.113 = getm $.Toybox.Graphics;
-        %tmp.114 = getv %tmp.113 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.92 %tmp.93(%tmp.103, %tmp.108, %tmp.110, %tmp.112, %tmp.114);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_139_24_165_2_stop:
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %minDimensions.10 = local;
+        %tmp.50 = lgetv %dc;
+        %tmp.51 = getv function %tmp.50 :getTextDimensions;
+        %tmp.53 = lgetv %timeMinString.3;
+        %tmp.55 = lgetv %geistFont.7;
+        %tmp.56 = invoke %tmp.50 %tmp.51(%tmp.53, %tmp.55);
+        lputv %minDimensions.10 %tmp.56;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 157 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %secDimensions.11 = local;
+        %tmp.57 = lgetv %dc;
+        %tmp.58 = getv function %tmp.57 :getTextDimensions;
+        %tmp.60 = lgetv %timeSecString.4;
+        %tmp.62 = lgetv %geistFont20.8;
+        %tmp.63 = invoke %tmp.57 %tmp.58(%tmp.60, %tmp.62);
+        lputv %secDimensions.11 %tmp.63;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 160 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %spacing.12 = local;
+        %tmp.64 = 15;
+        lputv %spacing.12 %tmp.64;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 161 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %totalWidth.13 = local;
+        %tmp.66 = lgetv %hourDimensions.9;
+        %tmp.67 = 0;
+        %tmp.68 = agetv %tmp.66 %tmp.67;
+        %tmp.70 = lgetv %spacing.12;
+        %tmp.71 = add %tmp.68 %tmp.70;
+        %tmp.73 = lgetv %minDimensions.10;
+        %tmp.74 = 0;
+        %tmp.75 = agetv %tmp.73 %tmp.74;
+        %tmp.76 = add %tmp.71 %tmp.75;
+        lputv %totalWidth.13 %tmp.76;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 163 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %startX.14 = local;
+        %tmp.78 = lgetv %centerX.5;
+        %tmp.80 = lgetv %totalWidth.13;
+        %tmp.81 = 2;
+        %tmp.82 = div %tmp.80 %tmp.81;
+        %tmp.83 = sub %tmp.78 %tmp.82;
+        %tmp.84 = 10;
+        %tmp.85 = sub %tmp.83 %tmp.84;
+        lputv %startX.14 %tmp.85;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 164 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %offsetY.15 = local;
+        %tmp.86 = -70;
+        lputv %offsetY.15 %tmp.86;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 165 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop" ]
+        %secOffsetY.16 = local;
+        %tmp.87 = -22;
+        lputv %secOffsetY.16 %tmp.87;
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 168 4 ]
+        %tmp.88 = lgetv %dc;
+        %tmp.89 = getv function %tmp.88 :setColor;
+        %tmp.90 = 0xAFCFFF;
+        %tmp.91 = getm $.Toybox.Graphics;
+        %tmp.92 = getv %tmp.91 :COLOR_TRANSPARENT;
+        invoke %tmp.88 %tmp.89(%tmp.90, %tmp.92);
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 169 4 ]
+        %tmp.93 = lgetv %dc;
+        %tmp.94 = getv function %tmp.93 :drawText;
+        %tmp.96 = lgetv %startX.14;
+        %tmp.98 = lgetv %centerY.6;
+        %tmp.100 = lgetv %offsetY.15;
+        %tmp.101 = add %tmp.98 %tmp.100;
+        %tmp.103 = lgetv %geistFont.7;
+        %tmp.105 = lgetv %timeHourString.2;
+        %tmp.106 = getm $.Toybox.Graphics;
+        %tmp.107 = getv %tmp.106 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.93 %tmp.94(%tmp.96, %tmp.101, %tmp.103, %tmp.105, %tmp.107);
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 172 4 ]
+        %tmp.108 = lgetv %dc;
+        %tmp.109 = getv function %tmp.108 :setColor;
+        %tmp.110 = getm $.Toybox.Graphics;
+        %tmp.111 = getv %tmp.110 :COLOR_WHITE;
+        %tmp.112 = getm $.Toybox.Graphics;
+        %tmp.113 = getv %tmp.112 :COLOR_TRANSPARENT;
+        invoke %tmp.108 %tmp.109(%tmp.111, %tmp.113);
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 173 4 ]
+        %tmp.114 = lgetv %dc;
+        %tmp.115 = getv function %tmp.114 :drawText;
+        %tmp.117 = lgetv %startX.14;
+        %tmp.119 = lgetv %hourDimensions.9;
+        %tmp.120 = 0;
+        %tmp.121 = agetv %tmp.119 %tmp.120;
+        %tmp.122 = add %tmp.117 %tmp.121;
+        %tmp.124 = lgetv %spacing.12;
+        %tmp.125 = add %tmp.122 %tmp.124;
+        %tmp.127 = lgetv %centerY.6;
+        %tmp.129 = lgetv %offsetY.15;
+        %tmp.130 = add %tmp.127 %tmp.129;
+        %tmp.132 = lgetv %geistFont.7;
+        %tmp.134 = lgetv %timeMinString.3;
+        %tmp.135 = getm $.Toybox.Graphics;
+        %tmp.136 = getv %tmp.135 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.114 %tmp.115(%tmp.125, %tmp.130, %tmp.132, %tmp.134, %tmp.136);
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 176 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_176_4_180_4_if_stmt:
+        %tmp.138 = getv ? :isHighPower;
+        bf %tmp.138 @C_Users_Username_Desktop_FACE_source_FACEView_mc_176_4_180_4_if_end;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_176_4_180_4_if_true:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_176_20_180_4_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 177 6 ]
+        %tmp.139 = lgetv %dc;
+        %tmp.140 = getv function %tmp.139 :setColor;
+        %tmp.141 = getm $.Toybox.Graphics;
+        %tmp.142 = getv %tmp.141 :COLOR_WHITE;
+        %tmp.143 = getm $.Toybox.Graphics;
+        %tmp.144 = getv %tmp.143 :COLOR_TRANSPARENT;
+        invoke %tmp.139 %tmp.140(%tmp.142, %tmp.144);
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 178 6 ]
+        %tmp.145 = lgetv %dc;
+        %tmp.146 = getv function %tmp.145 :drawText;
+        %tmp.148 = lgetv %startX.14;
+        %tmp.150 = lgetv %hourDimensions.9;
+        %tmp.151 = 0;
+        %tmp.152 = agetv %tmp.150 %tmp.151;
+        %tmp.153 = add %tmp.148 %tmp.152;
+        %tmp.155 = lgetv %spacing.12;
+        %tmp.156 = add %tmp.153 %tmp.155;
+        %tmp.158 = lgetv %minDimensions.10;
+        %tmp.159 = 0;
+        %tmp.160 = agetv %tmp.158 %tmp.159;
+        %tmp.161 = add %tmp.156 %tmp.160;
+        %tmp.162 = 10;
+        %tmp.163 = add %tmp.161 %tmp.162;
+        %tmp.165 = lgetv %centerY.6;
+        %tmp.167 = lgetv %secOffsetY.16;
+        %tmp.168 = add %tmp.165 %tmp.167;
+        %tmp.170 = lgetv %geistFont20.8;
+        %tmp.172 = lgetv %timeSecString.4;
+        %tmp.173 = getm $.Toybox.Graphics;
+        %tmp.174 = getv %tmp.173 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.145 %tmp.146(%tmp.163, %tmp.168, %tmp.170, %tmp.172, %tmp.174);
+C_Users_Username_Desktop_FACE_source_FACEView_mc_176_20_180_4_stop:
+        goto @C_Users_Username_Desktop_FACE_source_FACEView_mc_176_4_180_4_if_end;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_176_4_180_4_if_end:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_141_24_181_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 168; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 184; ]
     private
     function drawReferenceLines(dc as Dc) as Void {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 169 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_184_48_196_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 185 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_184_48_196_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_184_48_196_2_stop" ]
         %WIDTH.1 = local;
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %WIDTH.1 %tmp.3;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 170 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 186 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_184_48_196_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_184_48_196_2_stop" ]
         %HEIGHT.2 = local;
         %tmp.4 = lgetv %dc;
         %tmp.5 = getv function %tmp.4 :getHeight;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %HEIGHT.2 %tmp.6;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 172 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 188 4 ]
         %tmp.7 = lgetv %dc;
         %tmp.8 = getv function %tmp.7 :setPenWidth;
         %tmp.9 = 1;
         invoke %tmp.7 %tmp.8(%tmp.9);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 174 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 190 4 ]
         %tmp.10 = lgetv %dc;
         %tmp.11 = getv function %tmp.10 :setColor;
         %tmp.12 = getm $.Toybox.Graphics;
@@ -842,7 +920,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start:
         %tmp.14 = getm $.Toybox.Graphics;
         %tmp.15 = getv %tmp.14 :COLOR_TRANSPARENT;
         invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 175 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 191 4 ]
         %tmp.16 = lgetv %dc;
         %tmp.17 = getv function %tmp.16 :fillRectangle;
         %tmp.18 = 0;
@@ -852,7 +930,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start:
         %tmp.24 = lgetv %WIDTH.1;
         %tmp.25 = 1;
         invoke %tmp.16 %tmp.17(%tmp.18, %tmp.22, %tmp.24, %tmp.25);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 176 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 192 4 ]
         %tmp.26 = lgetv %dc;
         %tmp.27 = getv function %tmp.26 :fillRectangle;
         %tmp.28 = 0.25;
@@ -862,7 +940,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start:
         %tmp.33 = 1;
         %tmp.35 = lgetv %HEIGHT.2;
         invoke %tmp.26 %tmp.27(%tmp.31, %tmp.32, %tmp.33, %tmp.35);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 178 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 194 4 ]
         %tmp.36 = lgetv %dc;
         %tmp.37 = getv function %tmp.36 :fillRectangle;
         %tmp.38 = 0.5;
@@ -872,7 +950,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start:
         %tmp.43 = 1;
         %tmp.45 = lgetv %HEIGHT.2;
         invoke %tmp.36 %tmp.37(%tmp.41, %tmp.42, %tmp.43, %tmp.45);
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 179 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 195 4 ]
         %tmp.46 = lgetv %dc;
         %tmp.47 = getv function %tmp.46 :fillRectangle;
         %tmp.48 = 0.75;
@@ -882,14 +960,14 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_start:
         %tmp.53 = 1;
         %tmp.55 = lgetv %HEIGHT.2;
         invoke %tmp.46 %tmp.47(%tmp.51, %tmp.52, %tmp.53, %tmp.55);
-C_Users_Username_Desktop_FACE_source_FACEView_mc_168_48_180_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_184_48_196_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 183; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 199; ]
     private
     function getHeartRate() as Number {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_183_36_186_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 184 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_183_36_186_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_183_36_186_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_199_36_202_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 200 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_199_36_202_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_199_36_202_2_stop" ]
         %heartrateIterator.1 = local;
         %tmp.1 = getm $.Toybox.ActivityMonitor;
         %tmp.2 = getv function %tmp.1 :getHeartRateHistory;
@@ -897,19 +975,19 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_183_36_186_2_start:
         %tmp.4 = true;
         %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
         lputv %heartrateIterator.1 %tmp.5;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 185 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 201 4 ]
         %tmp.6 = lgetv %heartrateIterator.1;
         %tmp.7 = getv function %tmp.6 :next;
         %tmp.8 = invoke %tmp.6 %tmp.7();
         %tmp.9 = getv %tmp.8 :heartRate;
         ret %tmp.9;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_183_36_186_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_199_36_202_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 189; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 205; ]
     private
     function getHeartRateString() as String {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_189_42_191_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 190 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_205_42_207_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 206 4 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getHeartRate;
         %tmp.3 = invoke %tmp.1 %tmp.2();
@@ -917,46 +995,46 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_189_42_191_2_start:
         %tmp.5 = "%d";
         %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
         ret %tmp.6;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_189_42_191_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_205_42_207_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 194; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 210; ]
     private
     function getSteps() as Lang.Number or Null {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_194_39_196_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 195 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_210_39_212_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 211 4 ]
         %tmp.1 = getm $.Toybox.ActivityMonitor;
         %tmp.2 = getv function %tmp.1 :getInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :steps;
         ret %tmp.4;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_194_39_196_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_210_39_212_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 199; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 215; ]
     private
     function getStepsString() as String {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_199_38_205_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 200 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_199_38_205_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_199_38_205_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_215_38_221_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 216 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_215_38_221_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_215_38_221_2_stop" ]
         %steps.1 = local;
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getSteps;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %steps.1 %tmp.3;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 201 4 ]
-C_Users_Username_Desktop_FACE_source_FACEView_mc_201_4_203_4_if_stmt:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 217 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_217_4_219_4_if_stmt:
         %tmp.5 = lgetv %steps.1;
         %tmp.6 = null;
         %tmp.7 = eq %tmp.5 %tmp.6;
-        bf %tmp.7 @C_Users_Username_Desktop_FACE_source_FACEView_mc_201_4_203_4_if_end;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_201_4_203_4_if_true:
-C_Users_Username_Desktop_FACE_source_FACEView_mc_201_23_203_4_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 202 6 ]
+        bf %tmp.7 @C_Users_Username_Desktop_FACE_source_FACEView_mc_217_4_219_4_if_end;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_217_4_219_4_if_true:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_217_23_219_4_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 218 6 ]
         %tmp.8 = "-";
         ret %tmp.8;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_201_23_203_4_stop:
-        goto @C_Users_Username_Desktop_FACE_source_FACEView_mc_201_4_203_4_if_end;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_201_4_203_4_if_end:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 204 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_217_23_219_4_stop:
+        goto @C_Users_Username_Desktop_FACE_source_FACEView_mc_217_4_219_4_if_end;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_217_4_219_4_if_end:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 220 4 ]
         %tmp.9 = self;
         %tmp.10 = getv function %tmp.9 :getSteps;
         %tmp.11 = invoke %tmp.9 %tmp.10();
@@ -964,51 +1042,51 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_201_4_203_4_if_end:
         %tmp.13 = "%d";
         %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
         ret %tmp.14;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_199_38_205_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_215_38_221_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 208; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 224; ]
     private
     function getBattery() {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_208_24_211_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 209 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_208_24_211_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_208_24_211_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_224_24_227_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 225 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_224_24_227_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_224_24_227_2_stop" ]
         %stats.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getSystemStats;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %stats.1 %tmp.3;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 210 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 226 4 ]
         %tmp.4 = lgetv %stats.1;
         %tmp.5 = getv %tmp.4 :battery;
         ret %tmp.5;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_208_24_211_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_224_24_227_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 214; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 230; ]
     private
     function getBatteryString() as String {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_214_40_220_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 215 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_214_40_220_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_214_40_220_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_230_40_236_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 231 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_230_40_236_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_230_40_236_2_stop" ]
         %battery.1 = local;
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getBattery;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %battery.1 %tmp.3;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 216 4 ]
-C_Users_Username_Desktop_FACE_source_FACEView_mc_216_4_218_4_if_stmt:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 232 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_232_4_234_4_if_stmt:
         %tmp.5 = lgetv %battery.1;
         %tmp.6 = null;
         %tmp.7 = eq %tmp.5 %tmp.6;
-        bf %tmp.7 @C_Users_Username_Desktop_FACE_source_FACEView_mc_216_4_218_4_if_end;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_216_4_218_4_if_true:
-C_Users_Username_Desktop_FACE_source_FACEView_mc_216_25_218_4_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 217 6 ]
+        bf %tmp.7 @C_Users_Username_Desktop_FACE_source_FACEView_mc_232_4_234_4_if_end;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_232_4_234_4_if_true:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_232_25_234_4_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 233 6 ]
         %tmp.8 = "-";
         ret %tmp.8;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_216_25_218_4_stop:
-        goto @C_Users_Username_Desktop_FACE_source_FACEView_mc_216_4_218_4_if_end;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_216_4_218_4_if_end:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 219 4 ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_232_25_234_4_stop:
+        goto @C_Users_Username_Desktop_FACE_source_FACEView_mc_232_4_234_4_if_end;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_232_4_234_4_if_end:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 235 4 ]
         %tmp.9 = self;
         %tmp.10 = getv function %tmp.9 :getBattery;
         %tmp.11 = invoke %tmp.9 %tmp.10();
@@ -1018,14 +1096,14 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_216_4_218_4_if_end:
         %tmp.15 = "%";
         %tmp.16 = add %tmp.14 %tmp.15;
         ret %tmp.16;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_214_40_220_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_230_40_236_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 222; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 238; ]
     private
     function getDateString() as String {
-C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start:
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 223 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_stop" ]
+C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 239 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_stop" ]
         %timeOptions.1 = local;
         %tmp.1 = newd 1;
         %tmp.3 = const :currentTimeType;
@@ -1034,16 +1112,16 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start:
         %tmp.7 = dup %tmp.1;
         %tmp.8 = aputv %tmp.7 %tmp.3 %tmp.6;
         lputv %timeOptions.1 %tmp.8;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 224 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 240 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_stop" ]
         %now.2 = local;
         %tmp.10 = getv ? :Time;
         %tmp.11 = getv function %tmp.10 :getCurrentTime;
         %tmp.13 = lgetv %timeOptions.1;
         %tmp.14 = invoke %tmp.10 %tmp.11(%tmp.13);
         lputv %now.2 %tmp.14;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 225 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 241 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_stop" ]
         %info.3 = local;
         %tmp.16 = getv ? :Time;
         %tmp.17 = getv %tmp.16 :Gregorian;
@@ -1053,8 +1131,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start:
         %tmp.23 = getv %tmp.22 :FORMAT_SHORT;
         %tmp.24 = invoke %tmp.17 %tmp.18(%tmp.20, %tmp.23);
         lputv %info.3 %tmp.24;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 226 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 242 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_stop" ]
         %months.4 = local;
         %tmp.25 = newa 12;
         %tmp.26 = "JAN";
@@ -1094,8 +1172,8 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start:
         %tmp.60 = dup %tmp.58;
         %tmp.61 = aputv %tmp.60 11 %tmp.59;
         lputv %months.4 %tmp.61;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 240 4 ]
-        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_stop" ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 256 4 ]
+        [ "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_start" "C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_stop" ]
         %days.5 = local;
         %tmp.62 = newa 7;
         %tmp.63 = "Sun";
@@ -1120,7 +1198,7 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start:
         %tmp.82 = dup %tmp.80;
         %tmp.83 = aputv %tmp.82 6 %tmp.81;
         lputv %days.5 %tmp.83;
-[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 241 4 ]
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 257 4 ]
         %tmp.84 = getm $.Toybox.Lang;
         %tmp.85 = getv function %tmp.84 :format;
         %tmp.86 = "$1$ $2$. $3$";
@@ -1145,16 +1223,26 @@ C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_start:
         %tmp.107 = aputv %tmp.106 2 %tmp.105;
         %tmp.108 = invoke %tmp.84 %tmp.85(%tmp.86, %tmp.107);
         ret %tmp.108;
-C_Users_Username_Desktop_FACE_source_FACEView_mc_222_37_244_2_stop:
+C_Users_Username_Desktop_FACE_source_FACEView_mc_238_37_260_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 249; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 265; ]
     function onHide() as Void {
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 253; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 269; ]
     function onExitSleep() as Void {
+C_Users_Username_Desktop_FACE_source_FACEView_mc_269_33_271_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 270 4 ]
+        %tmp.1 = true;
+        putv self :isHighPower %tmp.1;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_269_33_271_2_stop:
     }
-    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 256; ]
+    [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 274; ]
     function onEnterSleep() as Void {
+C_Users_Username_Desktop_FACE_source_FACEView_mc_274_34_276_2_start:
+[ "C:\Users\Username\Desktop\FACE\source\FACEView.mc" 275 4 ]
+        %tmp.1 = false;
+        putv self :isHighPower %tmp.1;
+C_Users_Username_Desktop_FACE_source_FACEView_mc_274_34_276_2_stop:
     }
 }
 [ @file = "C:\Users\Username\Desktop\FACE\source\FACEView.mc"; @line = 1; ]

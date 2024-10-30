@@ -16,6 +16,7 @@ module Rez {
     module Fonts {
         (:initialized) var geist_110 as ResourceId;
         (:initialized) var geist_26 as ResourceId;
+        (:initialized) var geist_20 as ResourceId;
     } // Fonts
 
     module Layouts {

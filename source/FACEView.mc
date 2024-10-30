@@ -4,6 +4,8 @@ import Toybox.System;
 import Toybox.WatchUi;
 
 class FACEView extends WatchUi.WatchFace {
+  var isHighPower = true;
+
   function initialize() { WatchFace.initialize(); }
 
   // Load your resources here
@@ -36,7 +38,7 @@ class FACEView extends WatchUi.WatchFace {
     var centerY = dc.getHeight() / 2;
 
     var iconWidth = 14;
-    var spacing = 5;
+    var spacing = 10;
 
     var textDimensions = dc.getTextDimensions(heartRate, geistFont);
     var textWidth = textDimensions[0];
@@ -47,7 +49,7 @@ class FACEView extends WatchUi.WatchFace {
 
     var iconY = centerY - iconWidth / 2;
     var textY = centerY - textHeight / 2;
-    var offsetY = 67;
+    var offsetY = 65;
 
     dc.drawBitmap(startX, iconY + offsetY, heartIcon);
 
@@ -65,7 +67,7 @@ class FACEView extends WatchUi.WatchFace {
     var centerY = dc.getHeight() / 2;
 
     var iconWidth = 14;
-    var spacing = 5;
+    var spacing = 10;
 
     var textDimensions = dc.getTextDimensions(steps, geistFont);
     var textWidth = textDimensions[0];
@@ -86,7 +88,7 @@ class FACEView extends WatchUi.WatchFace {
   }
 
   function drawBattery(dc) {
-    var geistFont = WatchUi.loadResource(Rez.Fonts.geist_26);
+    var geistFont = WatchUi.loadResource(Rez.Fonts.geist_20);
     var lightIcon = WatchUi.loadResource(Rez.Drawables.lightIcon);
     var battery = getBatteryString();
 
@@ -105,7 +107,7 @@ class FACEView extends WatchUi.WatchFace {
 
     var iconY = centerY - iconWidth / 2;
     var textY = centerY - textHeight / 2;
-    var offsetY = 165;
+    var offsetY = 170;
 
     dc.drawBitmap(startX, iconY + offsetY, lightIcon);
 
@@ -129,7 +131,7 @@ class FACEView extends WatchUi.WatchFace {
     var startX = centerX - totalWidth / 2;
 
     var textY = centerY - textHeight / 2;
-    var offsetY = -87;
+    var offsetY = -97;
 
     dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
     dc.drawText(startX, textY + offsetY, geistFont, date,
@@ -140,28 +142,42 @@ class FACEView extends WatchUi.WatchFace {
     var clockTime = System.getClockTime();
     var timeHourString = clockTime.hour.format("%02d");
     var timeMinString = clockTime.min.format("%02d");
+    var timeSecString = clockTime.sec.format("%02d");
+
 
     var centerX = dc.getWidth() / 2;
     var centerY = dc.getHeight() / 2;
 
     var geistFont = WatchUi.loadResource(Rez.Fonts.geist_110);
+    var geistFont20 = WatchUi.loadResource(Rez.Fonts.geist_20);
+
 
     var hourDimensions = dc.getTextDimensions(timeHourString, geistFont);
     var minDimensions = dc.getTextDimensions(timeMinString, geistFont);
+    var secDimensions = dc.getTextDimensions(timeSecString, geistFont20);
+
 
     var spacing = 15;  
     var totalWidth = hourDimensions[0] + spacing + minDimensions[0];
 
-    var startX = centerX - (totalWidth / 2);
-    var offsetY = -60;
+    var startX = centerX - (totalWidth / 2) - 10;
+    var offsetY = -70;
+    var secOffsetY = -22;
+
 
     dc.setColor(0xAFCFFF, Graphics.COLOR_TRANSPARENT);
-     dc.drawText(startX, centerY + offsetY, geistFont, timeHourString,
+    dc.drawText(startX, centerY + offsetY, geistFont, timeHourString,
                 Graphics.TEXT_JUSTIFY_LEFT);
 
-     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-     dc.drawText(startX + hourDimensions[0] + spacing, centerY + offsetY, geistFont,
+    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(startX + hourDimensions[0] + spacing, centerY + offsetY, geistFont,
                  timeMinString, Graphics.TEXT_JUSTIFY_LEFT);
+
+    if(isHighPower) {
+      dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+      dc.drawText(startX + hourDimensions[0] + spacing + minDimensions[0] + 10, centerY + secOffsetY, geistFont20,
+                   timeSecString, Graphics.TEXT_JUSTIFY_LEFT);
+    }
   }
 
  private
@@ -250,8 +266,12 @@ class FACEView extends WatchUi.WatchFace {
 
   // The user has just looked at their watch. Timers and animations may be
   // started here.
-  function onExitSleep() as Void {}
+  function onExitSleep() as Void {
+    isHighPower = true;
+  }
 
   // Terminate any active timers and prepare for slow updates.
-  function onEnterSleep() as Void {}
+  function onEnterSleep() as Void {
+    isHighPower = false;
+  }
 }
