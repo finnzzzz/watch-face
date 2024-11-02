@@ -78,7 +78,7 @@ class FACEView extends WatchUi.WatchFace {
 
     var iconY = centerY - iconWidth / 2;
     var textY = centerY - textHeight / 2;
-    var offsetY = 107;
+    var offsetY = 100;
 
     dc.drawBitmap(startX, iconY + offsetY, stepsIcon);
 
@@ -236,27 +236,41 @@ class FACEView extends WatchUi.WatchFace {
   }
  private
   function getDateString() as String {
-    var timeOptions = { :currentTimeType => Time.CURRENT_TIME_DEFAULT};
-    var now = Time.getCurrentTime(timeOptions);
-    var info = Time.Gregorian.info(now, Time.FORMAT_SHORT);
-    var months = [
-      "JAN",
-      "FEB",
-      "MAR",
-      "APR",
-      "MAY",
-      "JUN",
-      "JUL",
-      "AUG",
-      "SEP",
-      "OCT",
-      "NOV",
-      "DEC",
-    ];
-    var days = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
-    return Lang.format(
-        "$1$ $2$. $3$",
-        [ info.day, months[info.month - 1], days[info.day_of_week] ]);
+   try {
+       var timeOptions = { :currentTimeType => Time.CURRENT_TIME_DEFAULT };
+       var now = Time.getCurrentTime(timeOptions);
+       var info = Time.Gregorian.info(now, Time.FORMAT_SHORT);
+
+       System.println("Date info: " + info.month);
+       System.println("Date info: " + info.day);
+       System.println("Date info: " + info.day_of_week);
+
+       var months = [
+           "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+           "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+       ];
+       
+       var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+       if (info.month < 1 || info.month > 12 ||
+           info.day == null || 
+           info.day_of_week < 0 || info.day_of_week > 7) {
+           return "--";
+       }
+
+       var monthIndex = (info.month - 1) % 12;
+        System.println("monthIndex" + monthIndex);
+       var dayIndex = (info.day_of_week - 1) % 7;
+        System.println("dayIndex" + dayIndex);
+
+
+       return Lang.format(
+           "$1$ $2$. $3$",
+           [info.day, months[monthIndex], days[dayIndex]]
+       );
+   } catch(e) {
+       return "--";
+   }
   }
 
   // Called when this View is removed from the screen. Save the
